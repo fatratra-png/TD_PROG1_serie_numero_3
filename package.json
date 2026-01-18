@@ -1,0 +1,16 @@
+{
+  "name": "td_prog1_2026_serie3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getMinMaxInteger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
