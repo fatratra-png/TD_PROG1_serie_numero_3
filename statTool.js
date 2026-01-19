@@ -1,4 +1,33 @@
-const { startTransition } = require("react");
+// Analyse du probleme:
+
+// Entree:tableau
+// Sortie:la somme des nombres du tableau
+
+// Conception:
+
+// Utiliser une structure iterative POUR afin de parcourir le tableau et additionner chaque element parcouru avec une variable sum initialisee a 0
+// Utiliser une structure conditionnelle simple afin de definir comme condition le retour de 0 si le tableu est vide
+
+// Pseudo-code:
+
+// DEBUT
+//   Fonction sum(tab)
+//     Declarer tab:tableau
+
+//     Si longueur du tableau == 0 Alors
+//       Retourner 0
+//     FinSi
+
+//     POUR i allant de 0 a longueur de tab Faire
+//       sum=sum+tab[i]
+//     FinPOUR
+
+//     Retourner sum
+
+//   Fin Fonction
+// FIN
+
+// Implementation:
 
 const sum = (tab) => {
   if (tab.length == 0) return 0;
@@ -12,18 +41,74 @@ const sum = (tab) => {
 // console.log(sum([1, 3, 7, 6, 10]));
 // console.log(sum([]));
 
+// Analyse du probleme:
+// Entree:tableau non vide
+// Sortie:La moyenne des elements du tableau
+
+// Conception:
+// Utiliser une structure iterative POUR afin de parcourir le tableau et additionner chaque element parcouru avec une varibale sum initialisee a 0 et ensuite diviser ta somme par la longueur du tableau
+
+// Pseudo-code:
+
+// DEBUT
+//   Fonction mean(tab)
+//     Declarer sum:entier
+//     Declarer tab:tableau
+//     sum=0
+
+//     POUR i allant de 0 a longueur de tab Faire
+//       sum=sum+tab[i]
+//     Fin POUR
+
+//     Declarer mean:reel
+
+//     mean=sum/longueur de tab
+
+//     Retourner mean
+//   Fin Fonction
+// FIN
+
+// Implementation:
+
 const mean = (tab) => {
   let sum = 0;
   for (let i = 0; i < tab.length; i++) {
     sum += tab[i];
   }
-  return (sum / tab.length);
+  let mean = sum / tab.length;
+  return mean;
 };
 // console.log(mean([12, 14, 17]));
 
+// Analyse du probleme:
+
+// Entree: tableau
+// Sortie: tableau contenant le carre de ses elements precedents
+
+// Conception:
+
+// Utiliser une structure iterative POUR ain de parcourir le tableau
+
+// Pseudo-code:
+
+// DEBUT
+//   Fonction square(tab)
+//     Declarer tab:tableau
+
+//     POUR i allant de 0 a longueur de tab Faire
+//       tab[i]==tab[i]**2
+//     Fin POUR
+
+//     Retourner tab
+
+//   Fin Fonction
+// FIN
+
+// Implementaion:
+
 const square = (tab) => {
   for (let i = 0; i < tab.length; i++) {
-    tab[i] *= tab[i];
+    tab[i] **= 2;
   }
   return tab;
 };
@@ -58,4 +143,3 @@ const standardDerivation = (tab) => {
   return standardDerivation;
 };
 // console.log(standardDerivation([1, 9, 7]));
-

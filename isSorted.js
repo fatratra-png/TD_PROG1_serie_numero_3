@@ -8,4 +8,4 @@ const isSorted = (tab) => {
   }
 };
 console.log(isSorted([1, 2, 3]));
-console.log(isSorted([1, 3, 2, 4]));
+console.log(isSorted([1, 3, 2, 4]));k

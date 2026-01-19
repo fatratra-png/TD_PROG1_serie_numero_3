@@ -3,7 +3,7 @@
 // Sortie:un tableau contenant tous les nombres entre a et b
 
 // Conception:
-// Utiliser une structure iterative POUR pour parcourir l'ensemble des nombres entre a et b et utiliser une structure de donnee(tableau vide) pour y stocker chaque element apres chaque iteration
+// Utiliser une structure iterative POUR pour parcourir l'ensemble des nombres entre a et b et utiliser une structure de donnee(tableau vide) pour y stocker chaque element parcouru
 
 // Pseudo-code:
 // DEBUT
