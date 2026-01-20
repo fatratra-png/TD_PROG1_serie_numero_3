@@ -114,6 +114,45 @@ const square = (tab) => {
 };
 // console.log(square([3, 8, 5]));
 
+// Analyse du probleme:
+
+// Entree:tableau
+// Sortie:Variance des elements du tableau
+
+// Conception:
+// Utiliser une structure iterative POUR afin de parcourir les elements du tableau et les manipuler afin d'en deduire la variance
+// Utiliser les instructions donnees pour deduire une formule pour calculer la variance
+
+// Pseudo-code:
+// DEBUT
+//   Fonction variance(tab)
+//     Declarer sum:entier
+//     Declarer sumOfSquare:entier
+
+//     sum=0
+//     sumOfSquare=0
+
+//     POUR i allant de 0 a longueur de tab -1 Faire
+//       sum=sum+tab[i]
+//       sumOfSquare=sumOfSquare+(tab[i]**2)
+//     Fin POUR
+
+//     Declarer mean:reel
+//     Declarer meanOfSquare:reel
+
+//     mean=sum/longueur de tab
+//     meanOfSquare=sumOfSquare/longueur de tab
+
+//     Declarer variance:reel
+//     variance=meanOfSquare-(mean**2)
+
+//     Retourner variance
+
+//   Fin Fonction
+// FIN
+
+// Implementation:
+
 const variance = (tab) => {
   let sum = 0;
   let sumOfSquare = 0;
@@ -124,9 +163,50 @@ const variance = (tab) => {
   }
   let mean = sum / tab.length;
   let meanOfSquare = sumOfSquare / tab.length;
-  return meanOfSquare - mean ** 2;
+
+  let variance = meanOfSquare - mean ** 2;
+
+  return variance;
 };
 // console.log(variance([1, 9, 7]));
+
+// Analyse du probleme:
+// Entree:tableau
+// Sortie:Ecart-type du tableau
+
+// Conception:
+// Utiliser une structure iterative POUR afin de parcourir les elements du tableau et en deduire d'apres les instructions l'ecart-type des elements du tableau
+
+// Pseudo-code:
+
+// DEBUT
+//   Fonction standardDerivation(tab)
+//     Declarer sum:entier
+//     Declarer sumOfSquare:entier
+//     sum=0
+//     sumOfSquare=0
+
+//     POUR i allant de 0 a longueur de tab -1 Faire
+//       sum=sum+tab[i]
+//       sumOfSquare=sumOfSquare+(tab[i]**2)
+//     Fin POUR
+
+//     Declarer mean:reel
+//     mean=sum/longueur de tab
+
+//     Declarer meanOfSquare=reel
+//     meanOfSquare=sumOfSquare/longueur de tab
+
+//     Declarer variance:reel
+//     variance=meanOfSquare-(mean**2)
+
+//     Declarer standardDerivation=racine carree de (variance)
+
+//     Retourner standardDerivation
+//   Fin Fonction
+// FIN
+
+// Implementation :
 
 const standardDerivation = (tab) => {
   let sum = 0;
